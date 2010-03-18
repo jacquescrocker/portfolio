@@ -1,0 +1,163 @@
+---
+extension: html
+filter: haml
+layout: none
+---
+
+!!! Strict
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title RailsJedi.com
+    %script{ :src => "javascript/jquery.js", :type => "text/javascript" }
+    %script{ :src => "fancybox/jquery.fancybox.js", :type => "text/javascript" }
+    %script{ :src => "javascript/javascript.js", :type => "text/javascript" }
+    %link{ :href => "css/site.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "fancybox/jquery.fancybox.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
+
+  %body
+    #leftSide
+      #title
+        %h1 RailsJedi.com
+        %span.titleSubText
+          portfolio of jacques crocker
+      #arrowWrapper
+        #arrow
+      #buttonsWrapper
+        -# About Button
+        #aboutButtonWrapper
+          #aboutButton.navButton
+          #aboutCaption.navCaption
+            -# About Button: Label
+            %span.navCaptionText
+              about
+            %br
+            -# About Button: Sub-Label
+            %span.navSubCaptionText
+              who I am
+
+        -# Portfolio Button
+        #portfolioButtonWrapper
+          #portfolioButton.navButton
+          #portfolioCaption.navCaption
+            -# Portfolio Button: Label
+            %span.navCaptionText
+              portfolio
+            %br
+            -# Portfolio Button: Sub-Label
+            %span.navSubCaptionText
+              my work
+
+        -# Services Button
+        #servicesButtonWrapper
+          #servicesButton.navButton
+          #servicesCaption.navCaption
+            -# Services Button: Label
+            %span.navCaptionText
+              consulting
+            %br
+            -# Services Button: Sub-Label
+            %span.navSubCaptionText
+              what i can do
+
+        -# Contact Button
+        #contactButtonWrapper
+          #contactButton.navButton
+          #contactCaption.navCaption
+            -# Contact Button: Label
+            %span.navCaptionText
+              contact
+            %br
+            -# Contact Button: Sub-Label
+            %span.navSubCaptionText
+              get in touch
+
+    #contentPanelWrapper
+      #contentPanelEdge
+
+      -# 'About' Content
+      #aboutContent.content
+        -# Title
+        .contentTitle
+          about
+        -# Body Text
+        #aboutText
+          %h3
+            Web Developer in Seattle, WA
+          %br
+          %p
+            Web UI developer with over 10 years of experience. Been working with Ruby and Rails for over 4 years (since mid 2006).
+          %p
+            Expert with web interface technologies: HTML, CSS, Javascript.
+          %p
+            Current focus is consulting with early stage startups.
+
+      -# 'Portfolio' Content
+      #portfolioContent.content
+        -# Title
+        .contentTitle
+          portfolio
+        -# Image Slider
+        #portfolioSlider
+          #sliderToolbar
+            #prevButton.sliderButton
+            #nextButton.sliderButton
+          #imageWrapper
+            %ul#imgList
+              -# Portfolio Images Go Here (See Documentation)
+              %li
+                %a.sliderImage{ :href => "images/portfolio/img1-large.jpg" }
+                  %img{ :src => "images/portfolio/img1-small.jpg", :alt => "" }
+              %li
+                %a.sliderImage{ :href => "images/portfolio/img2-large.jpg" }
+                  %img{ :src => "images/portfolio/img2-small.jpg", :alt => "" }
+              %li
+                %a.sliderImage{ :href => "images/portfolio/img3-large.jpg" }
+                  %img{ :src => "images/portfolio/img3-small.jpg", :alt => "" }
+              %li
+                %a.sliderImage{ :href => "images/portfolio/img4-large.jpg" }
+                  %img{ :src => "images/portfolio/img4-small.jpg", :alt => "" }
+
+      -# 'Services' Content
+      #servicesContent.content
+        -# Title
+        .contentTitle
+          startup consulting services
+        -# Service 1 Column
+        #serviceColumn1.serviceColumn
+          %h3
+            Ideas
+          %br
+          %p
+            Provide support for rapid development of web app prototypes. Help iterate on idea, and see things in action.
+        -# Service 2 Column
+        #serviceColumn2.serviceColumn
+          %h3
+            Design
+          %br
+          %p
+            Provide web app design using the latest CSS3 techniques.
+        -# Service 3 Column
+        #serviceColumn3.serviceColumn
+          %h3
+            Development
+          %br
+          %p
+            Implement your ideas using Ruby on Rails 3.0 and get them launched onto the web.
+
+      -# 'Contact' Content
+      #contactContent.content
+        -# Title
+        .contentTitle
+          contact
+        #contactFormWrapper
+          -# Contact Form
+          %form#contact{ :method => "post", :action => "mail.php" }
+            %input#name{ :name => "name", :type => "text", :value => "name" }
+            %input#email{ :name => "email", :type => "text", :value => "email" }
+            %br
+            %br
+            %textarea#message{ :name => "message", :rows => "", :cols => "" }
+              message
+            %input#submit{ :src => "images/sendButtonDis.png", :type => "image", :disabled => "disabled" }
+          #successMessage
