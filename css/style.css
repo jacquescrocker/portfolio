@@ -3,387 +3,391 @@
 * { margin: 0; padding: 0; border: none; outline: none; text-decoration: none; }
 
 body {
-	background-color:#42474d;
-	overflow:hidden;
+  background-color:#42474d;
+  overflow:hidden;
 }
 
 h1 {
-	position:relative;
-	font-family:Helvetica, Arial, sans-serif;
-	color:#FFFFFF;
-	font-size:19pt;
-	font-weight:normal;
-	text-shadow: rgba(0,0,0,0.75) 0px 1px 2px;
+  position:relative;
+  font-family:Helvetica, Arial, sans-serif;
+  color:#FFFFFF;
+  font-size:19pt;
+  font-weight:normal;
+  text-shadow: rgba(0,0,0,0.75) 0px 1px 2px;
 }
 
 h1 span {
-	background: url(../images/textGradient.png) repeat-x;
-	position:absolute;
-	display:block;
-	width:100%;
-	height:30px;	
+  background: url(../images/textGradient.png) repeat-x;
+  position:absolute;
+  display:block;
+  width:100%;
+  height:30px;  
 }
 
 h3 {
-	font-size:10pt;
+  font-size:10pt;
 }
 
 #name, #email, #message {
-	border:1px #A5A5A5 solid;
-	background-color:#FFFFFF;;
-	font-family:Helvetica, Arial, sans-serif;
-	font-size:10pt;
-	resize:none;
-	color:#888888;
+  border:1px #A5A5A5 solid;
+  background-color:#FFFFFF;;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:10pt;
+  resize:none;
+  color:#888888;
 }
 
 #name, #email {
-	height:20px;
-	width:166px;
-	padding-top:4px;
-	padding-bottom:2px;
-	padding-left:2px;
-	padding-right:2px;
+  height:20px;
+  width:166px;
+  padding-top:4px;
+  padding-bottom:2px;
+  padding-left:2px;
+  padding-right:2px;
 }
 
 #message {
-	width:344px;
-	height:51px;
-	padding-top:4px;
-	padding-bottom:2px;
-	padding-left:2px;
-	padding-right:2px;
+  width:344px;
+  height:51px;
+  padding-top:4px;
+  padding-bottom:2px;
+  padding-left:2px;
+  padding-right:2px;
 }
 
 #submit {
-	padding-top:6px;
+  padding-top:6px;
 }
 
 #leftSide {
-	position:absolute;
-	left:0px;
-	right:57%;
-	top:0px;
-	bottom:0px;
-	width:auto;
-	height:auto;
-	background-color:#4f545a;
-	background-image:url(../images/leftSide.png);
-	background-position:right;
-	background-repeat:repeat-y;
+  position:absolute;
+  left:0px;
+  right:57%;
+  top:0px;
+  bottom:0px;
+  width:auto;
+  height:auto;
+  background-color:#4f545a;
+  background-image:url(../images/leftSide.png);
+  background-position:right;
+  background-repeat:repeat-y;
 }
 
 #title {
-	position:absolute;
-	top:50%;
-	margin-top:-33px;
-	right:265px;
-	width:auto;
-	height:66px;
-	text-align:right;
-	line-height:26px;
-	cursor:pointer;
+  position:absolute;
+  top:50%;
+  margin-top:-33px;
+  right:265px;
+  width:auto;
+  height:66px;
+  text-align:right;
+  line-height:26px;
+  cursor:pointer;
 }
 
 .titleSubText {
-	font-family:Helvetica, Arial, sans-serif;
-	color:#a2a0a0;
-	font-size:10pt;
-	text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;
+  font-family:Helvetica, Arial, sans-serif;
+  color:#a2a0a0;
+  font-size:10pt;
+  text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;
 }
 
 #arrowWrapper {
-	position:absolute;
-	top:50%;
-	margin-top:-143px;
-	right:170px;
-	width:12px;
-	height:286px;
+  position:absolute;
+  top:50%;
+  margin-top:-143px;
+  right:170px;
+  width:12px;
+  height:286px;
 }
 #arrow {
-	position:absolute;
-	left:0px;
-	top:22px;
-	width:12px;
-	height:20px;
-	background-image:url(../images/highlightArrow.png);	
+  position:absolute;
+  left:0px;
+  top:22px;
+  width:12px;
+  height:20px;
+  background-image:url(../images/highlightArrow.png); 
 }
 
 #buttonsWrapper {
-	position:absolute;
-	top:50%;
-	margin-top:-143px;
-	right:15px;
-	width:145px;
-	height:286px;
+  position:absolute;
+  top:50%;
+  margin-top:-143px;
+  right:15px;
+  width:145px;
+  height:286px;
 }
 
 #aboutButtonWrapper {
-	position:absolute;
-	left:0px;
-	top:3px;
-	width:145px;
-	height:64px;
+  position:absolute;
+  left:0px;
+  top:3px;
+  width:145px;
+  height:64px;
 }
 
 #aboutButton {
-	background-position:0px 0px;
+  background-position:0px 0px;
 }
 
 #portfolioButtonWrapper {
-	position:absolute;
-	left:0px;
-	top:76px;
-	width:145px;
-	height:64px;
+  position:absolute;
+  left:0px;
+  top:76px;
+  width:145px;
+  height:64px;
 }
 
 #portfolioButton {
-	background-position:0px -64px;
+  background-position:0px -64px;
 }
 
 #servicesButtonWrapper {
-	position:absolute;
-	left:0px;
-	top:148px;
-	width:145px;
-	height:64px;
+  position:absolute;
+  left:0px;
+  top:148px;
+  width:145px;
+  height:64px;
 }
 
 #servicesButton {
-	background-position:0px -128px;
+  background-position:0px -128px;
 }
 
 #contactButtonWrapper {
-	position:absolute;
-	left:0px;
-	top:221px;
-	width:145px;
-	height:64px;
+  position:absolute;
+  left:0px;
+  top:221px;
+  width:145px;
+  height:64px;
 }
 
 #contactButton {
-	background-position:0px -192px;
+  background-position:0px -192px;
 }
 
 .navButton {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:65px;
-	height:64px;
-	background-image:url(../images/icons.png);
-	cursor:pointer;
-	z-index:2;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:65px;
+  height:64px;
+  background-image:url(../images/icons.png);
+  cursor:pointer;
+  z-index:2;
 }
 
 .navCaption {
-	position:absolute;
-	left:50px;
-	top:16px;
-	width:75px;
-	height:40px;
-	opacity:0;
-	z-index:1;
+  position:absolute;
+  left:50px;
+  top:16px;
+  width:75px;
+  height:40px;
+  opacity:0;
+  z-index:1;
 }
 
 .navCaptionText {
-	font-family:Helvetica, Arial, sans-serif;
-	color:#c2c2c2;
-	font-size:11pt;
-	text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;
+  font-family:Helvetica, Arial, sans-serif;
+  color:#c2c2c2;
+  font-size:11pt;
+  text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;
 }
 
 .navSubCaptionText {
-	font-family:Helvetica, Arial, sans-serif;
-	color:#898989;
-	font-size:8pt;
-	text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;
+  font-family:Helvetica, Arial, sans-serif;
+  color:#898989;
+  font-size:8pt;
+  text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;
 }
 
 #contentPanelWrapper {
-	position:absolute;
-	top:50%;
-	margin-top:-140px;
-	left:100%;
-	right:0px;
-	width:auto;
-	height:280px;
-	background-image:url(../images/panelBack.png);
-	overflow:hidden;
+  position:absolute;
+  top:50%;
+  margin-top:-140px;
+  left:100%;
+  right:0px;
+  width:auto;
+  height:280px;
+  background-image:url(../images/panelBack.png);
+  overflow:hidden;
 }
 
 #contentPanelEdge {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:30px;
-	height:280px;
-	background-image:url(../images/panelEdge.png);
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:30px;
+  height:280px;
+  background-image:url(../images/panelEdge.png);
 }
 
 .content {
-	position:absolute;
-	left:37px;
-	top:27px;
-	width:565px;
-	height:185px;
-	padding-top:45px;
+  position:absolute;
+  left:37px;
+  top:27px;
+  width:565px;
+  height:185px;
+  padding-top:45px;
 }
 
 .contentTitle {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:565px;
-	height:30px;
-	font-family:Helvetica, Arial, sans-serif;
-	color:#434242;
-	font-size:16pt;
-	text-shadow: rgba(255,255,255,0.75) 0px 1px 0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:565px;
+  height:30px;
+  font-family:Helvetica, Arial, sans-serif;
+  color:#434242;
+  font-size:16pt;
+  text-shadow: rgba(255,255,255,0.75) 0px 1px 0px;
 }
 
 #aboutContent {
-	display:none;	
+  display:none; 
 }
 
 #aboutText {
-	height:144px;
-	font-family:Helvetica, Arial, sans-serif;
-	color:#434242;
-	font-size:10pt;
-	text-shadow: rgba(255,255,255,0.75) 0px 1px 0px;	
-	overflow:auto;
+  height:144px;
+  font-family:Helvetica, Arial, sans-serif;
+  color:#434242;
+  font-size:10pt;
+  text-shadow: rgba(255,255,255,0.75) 0px 1px 0px;  
+  overflow:auto;
+}
+
+#aboutText p {
+  margin-bottom: 1em;
 }
 
 #portfolioContent {
-	background-image:url(../images/sliderBack.png);
-	background-position:-3px 50px;
-	background-repeat:no-repeat;
-	display:none;
+  background-image:url(../images/sliderBack.png);
+  background-position:-3px 50px;
+  background-repeat:no-repeat;
+  display:none;
 }
 
 #portfolioSlider {
-	position:absolute;
-	left:8px;
-	top:60px;
-	width:541px;
-	height:139px;
-	overflow:hidden;
+  position:absolute;
+  left:8px;
+  top:60px;
+  width:541px;
+  height:139px;
+  overflow:hidden;
 }
 
 #imageWrapper {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:541px;
-	height:139px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:541px;
+  height:139px;
 }
 
 #imgList ul { 
-	list-style:none;
+  list-style:none;
 }
 
 #imgList li {
-	display:inline;
-	float:left;
+  display:inline;
+  float:left;
 }
 
 #sliderToolbar {
-	position:absolute;
-	top:85px;
-	left:193px;
-	width:154px;
-	height:48px;
-	background-image:url(../images/navbarBack.png);
-	z-index:3;
+  position:absolute;
+  top:85px;
+  left:193px;
+  width:154px;
+  height:48px;
+  background-image:url(../images/navbarBack.png);
+  z-index:3;
 }
 
 .sliderButton {
-	position:absolute;
-	top:8px;
-	width:32px;
-	height:31px;
-	background-image:url(../images/navButtons.png);
-	cursor:pointer;
+  position:absolute;
+  top:8px;
+  width:32px;
+  height:31px;
+  background-image:url(../images/navButtons.png);
+  cursor:pointer;
 }
 
 #prevButton {
-	left:26px;
-	background-position:0px 0px;
+  left:26px;
+  background-position:0px 0px;
 }
 #prevButton:active {
-	background-position:32px 0px;
+  background-position:32px 0px;
 }
 
 #nextButton {
-	left:99px;
-	background-position:0px -62px;
+  left:99px;
+  background-position:0px -62px;
 }
 #nextButton:active {
-	background-position:32px -62px;
+  background-position:32px -62px;
 }
 
 #servicesContent {
-	display:none;
+  display:none;
 }
 
 .serviceColumn {
-	position:absolute;
-	top:55px;
-	width:165px;
-	height:165px;
-	font-family:Helvetica, Arial, sans-serif;
-	color:#434242;
-	font-size:8pt;
-	text-shadow: rgba(255,255,255,0.75) 0px 1px 0px;
-	line-height:12pt;
+  position:absolute;
+  top:55px;
+  width:165px;
+  height:165px;
+  font-family:Helvetica, Arial, sans-serif;
+  color:#434242;
+  font-size:8pt;
+  text-shadow: rgba(255,255,255,0.75) 0px 1px 0px;
+  line-height:12pt;
 }
 
 #serviceColumn1 {
-	left:0px;
+  left:0px;
 }
 
 #serviceColumn2 {
-	left:200px;
+  left:200px;
 }
 
 #serviceColumn3 {
-	left:400px;
+  left:400px;
 }
 
 #contactContent {
-	display:none;
+  display:none;
 }
 
 #contactFormWrapper {
-	position:absolute;
-	left:2px;
-	top:67px;
-	width:350px;
-	height:150px;
+  position:absolute;
+  left:2px;
+  top:67px;
+  width:350px;
+  height:150px;
 }
 
 #contact {
-	line-height:7px;
-	letter-spacing:1px;
-	text-align:right;
+  line-height:7px;
+  letter-spacing:1px;
+  text-align:right;
 }
 
 #successMessage {
-	position:absolute;
-	left:0px;
-	top:102px;
-	width:129px;
-	height:27px;
-	background-image:url(../images/sentBadge.png);
-	z-index:3;
-	display:none;
+  position:absolute;
+  left:0px;
+  top:102px;
+  width:129px;
+  height:27px;
+  background-image:url(../images/sentBadge.png);
+  z-index:3;
+  display:none;
 }
 
 #submit {
-	width:84px;
-	height:27px;
+  width:84px;
+  height:27px;
 }
 
 
