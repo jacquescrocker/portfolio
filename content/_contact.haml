@@ -1,0 +1,21 @@
+---
+extension: html
+filter: haml
+layout: none
+---
+
+-# Title
+.contentTitle
+  contact
+
+#contactFormWrapper
+  -# Contact Form
+  %form#contact{ :method => "post", :action => "mail.php" }
+    %input#name{ :name => "name", :type => "text", :value => "name" }
+    %input#email{ :name => "email", :type => "text", :value => "email" }
+    %br
+    %br
+    %textarea#message{ :name => "message", :rows => "", :cols => "" }
+      message
+    %input#submit{ :src => "images/sendButtonDis.png", :type => "image", :disabled => "disabled" }
+  #successMessage

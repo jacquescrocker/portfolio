@@ -116,25 +116,25 @@ h3
   width: 145px
   height: 286px
 
-#aboutButtonWrapper
+#portfolioButtonWrapper
   position: absolute
   left: 0px
   top: 3px
   width: 145px
   height: 64px
 
-#aboutButton
-  background-position: 0px 0px
+#portfolioButton
+  background-position: 0px -64px
 
-#portfolioButtonWrapper
+#aboutButtonWrapper
   position: absolute
   left: 0px
   top: 76px
   width: 145px
   height: 64px
 
-#portfolioButton
-  background-position: 0px -64px
+#aboutButton
+  background-position: 0px 0px
 
 #servicesButtonWrapper
   position: absolute
@@ -240,36 +240,47 @@ h3
 
 #portfolioContent
   background-image: url(../images/sliderBack.png)
-  background-position: -3px 50px
+  background-position: -3px 31px
   background-repeat: no-repeat
   display: none
 
 #portfolioSlider
   position: absolute
   left: 8px
-  top: 60px
+  top: 41px
   width: 541px
   height: 139px
   overflow: hidden
 
+#portfolioDescription
+  position: absolute
+  top: 195px
+  background-color: rgba(0,0,0,0.8)
+  color: #fff
+  max-width: 383px
+  text-align: left
+  font-size: 13px
+  font-family: Helvetica,Arial,sans-serif
+  padding: 6px 10px
+  
 #imageWrapper
   position: absolute
   left: 0px
   top: 0px
   width: 541px
   height: 139px
+    
+  #imgList
+    ul
+      list-style: none
+    li
+      display: inline
+      float: left
 
-#imgList
-  ul
-    list-style: none
-  li
-    display: inline
-    float: left
-
-#sliderToolbar
+#portfolioButtons
   position: absolute
-  top: 85px
-  left: 193px
+  bottom: -8px
+  right: 4px
   width: 154px
   height: 48px
   background-image: url(../images/navbarBack.png)
@@ -308,6 +319,8 @@ h3
   font-size: 8pt
   text-shadow: rgba(255,255,255,0.75) 0px 1px 0px
   line-height: 12pt
+  h3
+    margin-bottom: 14px
 
 #serviceColumn1
   left: 0px

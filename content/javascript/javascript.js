@@ -1,5 +1,3 @@
-var numImages=0;
-var currentImage=1;
 var currentPanel="none";
 
 $(document).ready(function(){   
@@ -24,28 +22,86 @@ $(document).ready(function(){
     ShowPanel("none");
   });
                
-  // Handles Formatting the Portfolio Slider
-  $("#imgList").children().each(function(){
-    numImages++;                     
+  // setup porfolio slider
+  var imageWrapper = $("#imageWrapper");
+  imageWrapper.bind({
+    "init": function() {
+      var self = $(this);
+
+      // find how many images there are
+      self.data("total", self.find("#imgList").children().length)
+
+      // initialize current to 1
+      self.data("current", 1);
+
+      // set overall width
+      imageWrapper.css({"width":(self.data("total")*541)});
+      
+      // set description
+      self.trigger("setDescription");        
+    },
+    
+    "previous": function() {
+      var self = $(this);
+      
+      // decrement index
+      var currentIndex = self.data("current");
+      if (currentIndex==1){
+        currentIndex = self.data("total");
+      } else {
+        currentIndex--;
+      };
+      self.data("current", currentIndex);
+      
+      self.trigger("animate");
+      self.trigger("setDescription");
+    },
+    
+    "next": function() {
+      var self = $(this);
+      
+      // increment index
+      var currentIndex = self.data("current");
+      if (currentIndex == self.data("total")){
+        currentIndex = 1;
+      } else {
+        currentIndex++;
+      };
+      self.data("current", currentIndex);
+      
+      self.trigger("animate");
+      self.trigger("setDescription");
+    },
+    
+    "animate": function(e) {
+      var self = $(this);
+      self.animate({"left":-((self.data("current")-1)*541)},500);
+    },
+    
+    "setDescription": function() {
+      var self = $(this);
+      var currentDescription = self.find(".description").eq(self.data("current")-1);
+      
+      var portfolioDescription = $("#portfolioDescription")
+      if(currentDescription.length > 0) {
+        portfolioDescription.html(currentDescription.html());
+        portfolioDescription.show();
+      }
+      else {
+        portfolioDescription.hide();
+      }
+      
+    }
   });
-  $("#imageWrapper").css({"width":(numImages*541)});
+  imageWrapper.trigger("init");  
   
   // Handles Function of the Portfolio Slider
   $("#prevButton").click(function(){
-    if (currentImage==1){
-      currentImage=numImages;
-    } else {
-      currentImage--;
-    };
-    $("#imageWrapper").animate({"left":-((currentImage-1)*541)},500);
+    imageWrapper.trigger("previous");
   });
+  
   $("#nextButton").click(function(){
-    if (currentImage==numImages){
-      currentImage=1;
-    } else {
-      currentImage++;
-    };
-    $("#imageWrapper").animate({"left":-((currentImage-1)*541)},500);
+    imageWrapper.trigger("next");
   });
     
   // Handles Rollover and Click For the Nav Buttons
@@ -194,16 +250,16 @@ function ShowPanel(panel){
         $("#contentPanelWrapper").animate({"left":"100%"},500);
         $("#arrow").fadeOut(50)
       break;
-      case "about":
+      case "portfolio":
         $("#contentPanelWrapper").animate({"left":"100%"},500,function(){
-          $("#aboutContent").show();
+          $("#portfolioContent").show();
           $("#contentPanelWrapper").animate({"left":"44%"},500);
         });
         $("#arrow").animate({"top":22},150,function(){$("#arrow").fadeIn(50)});
       break;
-      case "portfolio":
+      case "about":
         $("#contentPanelWrapper").animate({"left":"100%"},500,function(){
-          $("#portfolioContent").show();
+          $("#aboutContent").show();
           $("#contentPanelWrapper").animate({"left":"44%"},500);
         });
         $("#arrow").animate({"top":98},150,function(){$("#arrow").fadeIn(50)});
