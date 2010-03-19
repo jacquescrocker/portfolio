@@ -8,7 +8,31 @@ layout: none
 .contentTitle
   contact
 
-#contactFormWrapper
+
+#contactDetails
+  %dl
+    %dt
+      Phone:
+    %dd
+      415 894 0328
+
+    %dt
+      Email:
+    %dd
+      = link_to "railsjedi@gmail.com", "mailto:railsjedi@gmail.com"
+      
+    %dt
+      Twitter:
+    %dd
+      = link_to "@railsjedi", "http://twitter.com/railsjedi"
+    
+    %dt
+      GitHub:
+    %dd
+      = link_to "http://github.com/railsjedi", "http://github.com/railsjedi"
+    
+-# contact form (lame)
+#contactFormWrapper{hidden}
   -# Contact Form
   %form#contact{ :method => "post", :action => "mail.php" }
     %input#name{ :name => "name", :type => "text", :value => "name" }
