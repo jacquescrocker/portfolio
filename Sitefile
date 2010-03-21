@@ -1,3 +1,6 @@
+SITE.host = "abe.dreamhost.com"
+SITE.user = "railsjedi"
+SITE.remote_dir = "/home/railsjedi/railsjedi.com"
 
 task :default => [:rebuild, :autobuild]
 
