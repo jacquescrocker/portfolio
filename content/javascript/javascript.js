@@ -237,7 +237,6 @@ function ResetForm(){
 };
 
 function ShowPanel(panel){
-  console.log("Showing: "+panel);
   if(currentPanel == panel) {
     return;
   }
